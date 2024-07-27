@@ -1,15 +1,21 @@
 def main():
-    num1 = int(input('Enter the first number: '))
-    num2 = int(input('Enter the second number: '))
-    num3 = int(input('Enter the third number: '))
-    """
-    Code Your Program here
-    """
+    # Step 1: Get input from the user
+    num1 = int(input("Please enter the first integer value: "))
+    num2 = int(input("Please enter the second integer value: "))
+    num3 = int(input("Please enter the third integer value: "))
 
-    print(f'The greates number is {maxnum}')
-    ########################################
-    # Do not delete the return statement
-    ########################################
+    # Step 2: Determine the maximum value using if-else statements
+    maxnum = num1  # Start by assuming num1 is the maximum
+
+    if num2 > maxnum:  # Check if num2 is greater than the current max
+        maxnum = num2 
+
+    if num3 > maxnum:  # Check if num3 is greater than the current max
+        maxnum = num3
+
+    # Step 3: Print the result
+    print("The greatest number is:", maxnum)  
+
     return maxnum
 
 
